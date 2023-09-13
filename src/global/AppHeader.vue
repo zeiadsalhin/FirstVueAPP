@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <div class="display">
-        <div class="menu  bg-green-900 text-gray-300 " id="menu">
+        <div class="menu h-full bg-green-900 text-gray-300 " id="menu">
             <p class="block font-bold mr-2 p-2">المزرعة الذكية</p>
             <hr class="border-1 rounded border-gray-900 m-2 " />
             <img class="block font-semibold p-2 mb-2 py-5 " src="./assets/pic.png" alt="" />أهلا، المدير
