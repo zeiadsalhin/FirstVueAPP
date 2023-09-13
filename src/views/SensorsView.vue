@@ -1,5 +1,5 @@
 <script setup>
-// import Msg from '../components/HelpMsg.vue';
+// import './global/assets/js.js'
 
 </script>
 <template>

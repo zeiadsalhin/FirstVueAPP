@@ -4,7 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import './assets/index.css'
-import './assets/js.js'
+import './global/assets/js.js'
 import './assets/prog.css'
 import './assets/vanilla-js-pages-transition-loader.min'
 const app = createApp(App)

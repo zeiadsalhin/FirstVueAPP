@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-col ">
+  <div class="flex-col display">
     <div class="nav  justify-between md:hidden p-2 bg-green-700 ">
       <div class="flex justify-between">
         <a href="">

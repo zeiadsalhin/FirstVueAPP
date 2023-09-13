@@ -4,52 +4,55 @@ export default {
 }
 </script>
 <template>
-    <div class="side">
-        <div style="padding: 320px 0; height: 100vh;" class="display1 text-center bg-gray-700">
-            <p class="text-4xl font-bold text-gray-200">View on mobile screen</p>
-            <p class="text-xl text-gray-200">PC or Tablet is not supported</p>
-        </div>
+    <div style="padding: 320px 0; height: 100vh;" class="display1 text-center bg-gray-700">
+        <p class="text-4xl font-bold text-gray-200">View on mobile screen</p>
+        <p class="text-xl text-gray-200">PC or Tablet is not supported</p>
+    </div>
+    <div class="display">
+        <div class="side">
 
 
-        <div class="menu flex-wrap bg-green-900 text-gray-300 mt- " id="menu">
-            <p class="block font-bold mr-2 mt-2 p-2">المزرعة الذكية</p>
-            <hr class="border-1 rounded border-gray-900 m-2 " />
-            <img class="block font-semibold p-2 mb-2 py-5 " src="./assets/pic.png" alt="" />أهلا، المدير
-            <hr class="border-1 rounded border-gray-800 m-2 opacity-90" />
-            <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out">
-                <span class="block material-symbols-outlined">
-                    home
-                </span>
-                <RouterLink to="/">الرئيسية</RouterLink>
-            </div>
-            <hr class="border-1 rounded border-gray-900 m-2 " />
-            <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out">
-                <span class="flex-col justify-center material-symbols-outlined">
-                    nest_remote_comfort_sensor
-                </span>
-                <RouterLink to="/SensorsView">المستشعرات</RouterLink>
-            </div>
-            <hr class="border-1 rounded border-gray-800 m-2 opacity-90" />
-            <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out"><span
-                    class="material-symbols-outlined">
-                    person_apron
-                </span>
-                <RouterLink to="/ManagerView">الادارة</RouterLink>
-            </div>
-            <hr class="border-1 rounded border-gray-800 m-2 opacity-90" />
-            <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out"><span
-                    class="material-symbols-outlined">
-                    support_agent
-                </span>
-                <a href="https://wa.me/201002986660" class="block mb-2 px-1">الدعم</a>
-            </div>
-            <hr class="border-1 rounded border-gray-800 m-2 opacity-90" />
-            <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out"><span
-                    class="material-symbols-outlined">
-                    info
-                </span> <a class="block text-sm px-1" href="https://pactel.info">
-                    معلومات</a></div>
 
+            <div class="menu flex-wrap bg-green-900 text-gray-300 mt- " id="menu">
+                <p class="block font-bold mr-2 mt-2 p-2">المزرعة الذكية</p>
+                <hr class="border-1 rounded border-gray-900 m-2 " />
+                <img class="block font-semibold p-2 mb-2 py-5 " src="./assets/pic.png" alt="" />أهلا، المدير
+                <hr class="border-1 rounded border-gray-800 m-2 opacity-90" />
+                <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out">
+                    <span class="block material-symbols-outlined">
+                        home
+                    </span>
+                    <RouterLink to="/">الرئيسية</RouterLink>
+                </div>
+                <hr class="border-1 rounded border-gray-900 m-2 " />
+                <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out">
+                    <span class="flex-col justify-center material-symbols-outlined">
+                        nest_remote_comfort_sensor
+                    </span>
+                    <RouterLink to="/SensorsView">المستشعرات</RouterLink>
+                </div>
+                <hr class="border-1 rounded border-gray-800 m-2 opacity-90" />
+                <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out"><span
+                        class="material-symbols-outlined">
+                        person_apron
+                    </span>
+                    <RouterLink to="/ManagerView">الادارة</RouterLink>
+                </div>
+                <hr class="border-1 rounded border-gray-800 m-2 opacity-90" />
+                <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out"><span
+                        class="material-symbols-outlined">
+                        support_agent
+                    </span>
+                    <a href="https://wa.me/201002986660" class="block mb-2 px-1">الدعم</a>
+                </div>
+                <hr class="border-1 rounded border-gray-800 m-2 opacity-90" />
+                <div class="transition scale-100 hover:scale-90 duration-100 ease-in-out"><span
+                        class="material-symbols-outlined">
+                        info
+                    </span> <a class="block text-sm px-1" href="https://pactel.info">
+                        معلومات</a></div>
+
+            </div>
         </div>
     </div>
 </template>
