@@ -1,5 +1,5 @@
 <template>
-    <div class="Msg">
+    <div class="Msg bg-white p-10">
         <h2>Hello</h2>
         <p>This is Our Blog</p>
     </div>
@@ -9,8 +9,3 @@ export default {
     name: "blog-title"
 }
 </script>
-<style scoped>
-h2 {
-    font-size: 40px;
-}
-</style>
