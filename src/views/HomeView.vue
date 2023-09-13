@@ -28,7 +28,7 @@
 
         <div class="content flex-col w-auto text-gray-800  bg-gray-200">
           <h1 class="px-2 py-4 text-xl font-bold">أهلا بك في لوحة التحكم الذكية</h1>
-          <div class="nums flex ml-5 space-y-5"><iframe src="../src/assets/gif.gif" width="90%"></iframe>
+          <div class="nums flex ml-5 space-y-5"><iframe src="../global/assets/gif.gif" width="90%"></iframe>
           </div>
           <p class="px-4 py-2 text-right font-bold">حالة المزرعة : <span class="text-green-600">طبيعي</span>
           </p>
