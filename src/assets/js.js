@@ -1,6 +1,4 @@
-export default {
-  name: 'js'
-}
+
 const button = document.querySelector("#menub"),
   menu = document.querySelector("#menu");
 function menuf() {

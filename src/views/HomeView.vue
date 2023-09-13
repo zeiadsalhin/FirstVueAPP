@@ -82,7 +82,7 @@
 
 
         </div>
-        <div class="content mt-1 text-gray-800 flex-col w-72 bg-gray-300">
+        <div class="content text-center mt-1 text-gray-800 flex-col w-72 bg-gray-300">
           <p class="">: اخر تحديث</p>
           <span id="times" class="text-gray-600">
 
@@ -93,11 +93,12 @@
   </div>
 </template>
 <script>
-import Appheader from '../global/AppHeader.vue';
+import Appheader from '../global/AppHeader.vue'
 export default {
   name: "Home",
   components: { Appheader }
-}
+};
+
 // var time = new Date(); document.getElementById("#times").write(time.toLocaleString(time.getDay()))
 </script>
 <style></style>
