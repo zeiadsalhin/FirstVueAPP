@@ -1,9 +1,7 @@
-
-
 <template>
   <main>
     <div>
-      <h1 class="text-white p-2">Hello</h1>
+      <h1 class=" p-12">Hello</h1>
     </div>
   </main>
 </template>
