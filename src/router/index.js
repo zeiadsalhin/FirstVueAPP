@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/HomeView.vue'
 import Sensors from '../views/SensorsView.vue'
 import Manager from '../views/ManagerView.vue'
-import '../global/assets/js.js'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

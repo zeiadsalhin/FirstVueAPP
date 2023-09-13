@@ -1,12 +1,12 @@
 <script setup>
-// import blog from '../components/blogTitle.vue'
+import AppHeader from '../global/AppHeader.vue';
 </script>
 
 <template>
     <main>
         <div class="">
             <div class="flex ">
-
+                <AppHeader />
 
                 <div class="flex-col w-full">
                     <div class="nav  justify-between md:hidden p-2 bg-green-700 ">

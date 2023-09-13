@@ -1,12 +1,11 @@
 <script setup>
-// import './global/assets/js.js'
+import AppHeader from '../global/AppHeader.vue';
 
 </script>
 <template>
-    <div class="">
-        <div class="">
-
-
+    <div class="display">
+        <div class="flex">
+            <AppHeader />
 
             <div class="flex-col ">
                 <div class="nav   md:hidden p-2 bg-green-700 ">

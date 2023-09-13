@@ -6,6 +6,6 @@
 </template>
 <script>
 export default {
-    name: "blog-title"
+    name: "home"
 }
 </script>

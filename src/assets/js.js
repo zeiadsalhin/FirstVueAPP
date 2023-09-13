@@ -1,3 +1,6 @@
+export default {
+  name: 'js'
+}
 const button = document.querySelector("#menub"),
   menu = document.querySelector("#menu");
 function menuf() {
@@ -8,12 +11,13 @@ function menuf() {
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "visible");
 }
+console.log('ok')
 
-// const b1 = document.querySelector("#control1")
-// const b2 = document.querySelector("#control2")
-// const light = document.querySelector("#light")
-// const water = document.querySelector("#water")
-// const custom = document.querySelector("#custom")
+const b1 = document.querySelector("#control1")
+const b2 = document.querySelector("#control2")
+const light = document.querySelector("#light")
+const water = document.querySelector("#water")
+const custom = document.querySelector("#custom")
 
 
 // b1.addEventListener('click', () => {
@@ -52,12 +56,12 @@ function menuf() {
 //     }
 //   }, 1000);
 // });
-// function customf() {
-//   if (custom.innerHTML === 'تلقائي') {
-//     custom.innerHTML = ('مخصص')
-//     custom.classList.remove("text-green-600")
-//     custom.classList.toggle("text-orange-500")
-//   }
-// }
+function customf() {
+  if (custom.innerHTML === 'تلقائي') {
+    custom.innerHTML = ('مخصص')
+    custom.classList.remove("text-green-600")
+    custom.classList.toggle("text-orange-500")
+  }
+}
 
 
