@@ -2,6 +2,7 @@
 export default {
     name: "AppHeader"
 }
+
 </script>
 <template>
     <div class="display">

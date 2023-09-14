@@ -54,12 +54,6 @@ const custom = document.querySelector("#custom")
 //     }
 //   }, 1000);
 // });
-function customf() {
-  if (custom.innerHTML === 'تلقائي') {
-    custom.innerHTML = ('مخصص')
-    custom.classList.remove("text-green-600")
-    custom.classList.toggle("text-orange-500")
-  }
-}
+
 
 

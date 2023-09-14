@@ -29,11 +29,7 @@
         <div class="content flex-col w-auto text-gray-800  bg-gray-200">
           <h1 class="px-2 py-4 text-xl font-bold">أهلا بك في لوحة التحكم الذكية</h1>
           <div class="nums flex ml-5 space-y-5">
-            <div style="width:90%;height:0;padding-bottom:56%;position:relative;"><iframe
-                src="https://giphy.com/embed/USVgVUitCduCP9DjKo" width="100%" height="100%" style="position:absolute"
-                frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-
-
+            <img class="mr-2" src="https://b.rgbimg.com/users/w/we/weirdvis/300/o9zieWO.jpg" width="250">
           </div>
           <p class="px-4 py-2 text-right font-bold">حالة المزرعة : <span class="text-green-600">طبيعي</span>
           </p>
@@ -82,23 +78,43 @@
 
 
         </div>
+
         <div class="content text-center mt-1 text-gray-800 flex-col w-72 bg-gray-300">
           <p class="">: اخر تحديث</p>
           <span id="times" class="text-gray-600">
-
+            {{ currentDate() }}
           </span>
         </div>
       </div>
     </div>
   </div>
 </template>
-<script>
-import Appheader from '../global/AppHeader.vue'
-export default {
-  name: "Home",
-  components: { Appheader }
-};
+<script setup>
 
-// var time = new Date(); document.getElementById("#times").write(time.toLocaleString(time.getDay()))
+import Appheader from '../global/AppHeader.vue'
 </script>
+<script type="module">
+export default {
+
+  methods: {
+    currentDate() {
+      var time = new Date();
+      var currenttime = time.toLocaleString(time.getDay())
+      console.log(currenttime)
+
+      return currenttime
+
+    },
+  },
+  computed: {
+    mysrc: {
+      get: function () {
+        return "https://b.rgbimg.com/users/w/we/weirdvis/300/o9zieWO.jpg"
+      }
+    }
+  }
+
+}; 
+</script>
+
 <style></style>

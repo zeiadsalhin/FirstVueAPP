@@ -1,7 +1,8 @@
 <script setup>
 import AppHeader from '../global/AppHeader.vue';
-
+import btn from '../components/HelpMsg.vue'
 </script>
+
 <template>
     <div class="display">
         <div class="flex">
@@ -36,15 +37,23 @@ import AppHeader from '../global/AppHeader.vue';
                                 <th>المستشعر</th>
                             </tr>
                             <tr>
-                                <td> <button id="control1" class="p-1 px-2 m-2 bg-red-700 text-white">ايقاف</button>
+                                <td> <button @click="togglefirst" :class="[isActivefirst ? 'bg-green-600' : 'bg-red-700']"
+                                        id="control1" class="p-1 px-2 m-2  text-white">{{ isActivefirst ? 'مفعل' :
+                                            'متوقف' }}</button>
                                 </td>
-                                <td><span id="light" class="text-green-600 font-bold">مفعل</span></td>
+                                <td><span id="light" :class="[isActivefirst ? 'text-green-600' : 'text-red-700']"
+                                        class="text-green-600 font-bold">{{ isActivefirst ? 'مفعل' :
+                                            'متوقف' }}</span></td>
                                 <td>الاضاءة</td>
                             </tr>
                             <tr>
-                                <td> <button id="control2" class="p-1 px-2 m-2 bg-red-700 text-white">ايقاف</button>
+                                <td> <button @click="toggle" :class="[isActive ? 'bg-green-600' : 'bg-red-700']"
+                                        id="control2" class="p-1 px-2 m-2 bg-red- text-white">{{ isActive ? 'مفعل' :
+                                            'متوقف' }}</button>
                                 </td>
-                                <td><span id="water" class="text-green-600 font-bold">مفعل</span></td>
+                                <td><span id="water" :class="[isActive ? 'text-green-600' : 'text-red-700']"
+                                        class="text-green-600 font-bold">{{ isActive ? 'مفعل' : 'متوقف' }}</span>
+                                </td>
                                 <td>المياه</td>
                             </tr>
                         </table>
@@ -61,7 +70,7 @@ import AppHeader from '../global/AppHeader.vue';
                                     class="text-green-600">تلقائي</span></p>
 
                             <div class="flex justify-between p-4">
-                                <input onclick="customf()" type="time" id="time" value="">
+                                <input @click="customf" type="time" id="time" value="">
                                 <p class="text-sm">: وقت التشغيل</p>
 
                             </div>
@@ -162,4 +171,46 @@ td {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+.toggled {
+    content: none;
+}
 </style>
+<script>
+export default {
+    data() {
+
+        return {
+            isActivefirst: false,
+            isActive: true
+        };
+    },
+
+    methods: {
+        customf() {
+            if (custom.innerHTML === 'تلقائي') {
+                custom.innerHTML = ('مخصص')
+                custom.classList.remove("text-green-600")
+                custom.classList.toggle("text-orange-500")
+                return this.customf.innerHTML
+            }
+        },
+        togglefirst() {
+            if (!this.isActivefirst) {
+                this.isActivefirst = true;
+            } else {
+                this.isActivefirst = false
+            } console.log("changed1");
+        },
+        toggle() {
+            if (!this.isActive) {
+                this.isActive = true;
+            } else {
+                this.isActive = false
+            } console.log("changed2");
+        }
+    },
+
+};
+
+</script>
