@@ -7,7 +7,7 @@ import './assets/index.css'
 import './assets/js.js'
 import './assets/prog.css'
 import './assets/vanilla-js-pages-transition-loader.min'
-import './registerServiceWorker'
+// import './registerServiceWorker'
 const app = createApp(App)
 
 app.use(router)

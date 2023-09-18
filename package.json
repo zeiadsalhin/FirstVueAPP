@@ -14,13 +14,14 @@
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.3.1",
+    "@vitejs/plugin-vue": "^4.3.4",
     "@vue/cli-plugin-pwa": "~5.0.0",
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.9",
     "vite-plugin-pwa": "^0.16.5",
-    "vue-cli-plugin-vue": "file:../../../../../../../pwa"
+    "vue-cli-plugin-vue": "file:../../../../../../../pwa",
+    "workbox-webpack-plugin": "^7.0.0"
   }
 }
