@@ -17,8 +17,8 @@ export default defineConfig({
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "logo.svg"],
       manifest: {
         name: "Farm DashBoard",
-        short_name: "Short Name",
-        description: "Description",
+        short_name: "Farm Dashboard",
+        description: "Control your farm from your mobile phone",
         theme_color: "#ffffff",
         icons: [
           {
@@ -33,7 +33,7 @@ export default defineConfig({
           },
           {
             src: "/img/icons/android-chrome-512x512.png",
-            sizes: "512x512",
+            sizes: "192x192",
             type: "image/png",
             purpose: "any maskable",
           },
