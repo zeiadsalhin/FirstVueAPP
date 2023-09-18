@@ -8,8 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "pwa": "^1.9.4",
     "register-service-worker": "^1.7.2",
+    "vite-plugin-pwa": "^0.16.5",
+    "vite-plugin-remove-console": "^2.1.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },
