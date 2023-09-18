@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && workbox generateSW workbox-config.js",
     "dev": "vite",
     "preview": "vite preview"
   },
