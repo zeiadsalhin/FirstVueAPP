@@ -8,7 +8,16 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   plugins: [
     vue(),
-    VitePWA({ registerType: 'autoUpdate' }),
+    VitePWA({
+      manifest: {
+        icons: [{
+          src: "/icons/android-chrome-192x192.png",
+          sizes: "512x512",
+          type: "image/png",
+          purpose: "any maskable"
+        }]
+      }
+    }),
   ],
   resolve: {
     alias: {
