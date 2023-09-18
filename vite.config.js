@@ -22,6 +22,11 @@ export default defineConfig({
         theme_color: "#ffffff",
         icons: [
           {
+            src: "/img/icons/apple-touch-icon-76x76.png",
+            sizes: "76x76",
+            type: "image/png",
+          },
+          {
             src: "/img/icons/android-chrome-192x192.png",
             sizes: "192x192",
             type: "image/png",
@@ -32,10 +37,10 @@ export default defineConfig({
             type: "image/png",
           },
           {
-            src: "/img/icons/android-chrome-512x512.png",
+            src: "/img/icons/android-chrome-maskable-192x192.png",
             sizes: "192x192",
             type: "image/png",
-            purpose: "any maskable",
+            purpose: "maskable",
           },
         ],
       },
