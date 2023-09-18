@@ -11,7 +11,7 @@ export default defineConfig({
     VitePWA({
       manifest: {
         icons: [{
-          src: "/icons/android-chrome-192x192.png",
+          src: "android-chrome-192x192.png",
           sizes: "512x512",
           type: "image/png",
           purpose: "any maskable"
